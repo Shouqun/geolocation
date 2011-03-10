@@ -120,7 +120,7 @@ void _query_wireless_provider(HANDLE hClient,
 
       printf("    MAC address of BSS: ");
       
-      sprintf(mac, "%02x:%02x:%02x:%02x:%02x:%02x", 
+      sprintf(mac, "%02x-%02x-%02x-%02x-%02x-%02x", 
                     pWlanBssEntry->dot11Bssid[0],
                     pWlanBssEntry->dot11Bssid[1],
                     pWlanBssEntry->dot11Bssid[2],
