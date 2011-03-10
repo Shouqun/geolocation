@@ -35,7 +35,7 @@ class GeoLocation:
     
     data_object["wifi_towers"] = wifi_list
 
-    print json.dumps(data_object);
+    return json.dumps(data_object);
     
 
   def formatRequestHeader (self, version, host,
@@ -50,5 +50,5 @@ class GeoLocation:
 
 if __name__ == "__main__":
   geo = GeoLocation();
-  geo.getGeoRequestData();
+  print geo.getGeoRequestData();
 
